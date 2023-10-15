@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/pages/d3/d3.js"></script>
+  <link rel="stylesheet" href="../mystyle.css">
+  <title>D3 page</title>
+</head>
+<body>
+  <div class="index">
+    <h1>Subhin Hwang</h1>
+    <div class="tabs">
+        <a href="../index.html" class="tab">Home</a>
+        <a href="/pages/about.html" class="tab">About</a>
+        <a href="/pages/d3.html" class="tab">D3</a>
+        <a href="/pages/project.html" class="tab">Project</a>
+    </div>
+</div>
+  <h2>Scatterplot with D3.js</h2>
+  <div class="canvas"></div>
+  
+  <div class="dashboard-container">
+    <form>
+        <div class="form-group">
+            <label for="date-range">Select Date:</label>
+            <input type="date" id="date-range" required/>
+        </div>
+        
+        <div class="form-group">
+            <label>Data Range:</label>
+            <input type="range" id="data-range" min="1" max="100" value="50"/>
+        </div>
+        <div class="form-group">
+            <label>Chart Type:</label>
+            <label class="inline"><input type="radio" value="bar" checked/>Bar</label>
+            <label class="inline"><input type="radio" value="line"/>Line</label>
+            <label class="inline"><input type="radio" value="pie"/>Pie</label>
+        </div>
+        <div class="form-group">
+            <label>Select an Example:</label>
+            <select>
+                <option value="example1">Example 1</option>
+                <option value="example2">Example 2</option>
+                <option value="example3">Example 3</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button type="submit">Generate Visualization</button>
+        </div>
+        
+    </form>
+</div>
+
+
+  
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* 132043 */
+/* 1F4172 */
+/* F1B4BB */
+/* FDF0F0 */
+
+/* 219C90 */
+/* E9B824 */
+/* EE9322 */
+/* D83F31 */ 
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+p {
+    margin: 10px;
+}
+/* Header Styles */
+.index {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab {
+    text-decoration: none;
+    color: #E9B824;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.tab:hover {
+    background-color: #E9B824; /* 배경 색상 설정 */
+    font-weight: bold;
+    color: #D83F31; /* 텍스트 색상 설정 */
+}
+/* Content Styles */
+#about {
+    color: black;
+    padding: 10px;
+}
+
+#my-id {
+    background-color: #FDF0F0;
+    display: grid;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border: 5px solid grey;
+}
+
+#my-id:hover {
+    font-weight: bold;
+    fill: #D83F31;
+}
+
+/* SVG Styles */
+g:hover, 
+.my-fig rect:hover, 
+.my-fig ellipse:hover, 
+.my-fig polygon:hover {
+    stroke: #E9B824;
+    stroke-width: 10px;
+    fill: #D83F31;
+}
+
+/* Media Query for Mobile Devices */
+@media(max-width: 800px) {
+    div {
+        display: none;
+    }
+}
+
+h2 {
+    margin:20px;
+}
+
+
+/* d3 */
+.tooltip {
+    position: absolute;
+    width: 100px;
+    height: 45px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 5px;
+    font-size: 0.8em;
+  }

@@ -2,76 +2,63 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-        <title>웹개발 실습 10.14</title>
-        <style>
-            nav{
-                border:5px solid gray;
-                display:grid;
-                font-size:20px;
-            }
-            @media(max-width:800px){
-                div{
-                    display:none;
-                }
-            }  
-        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>숩숩 WORLD</title>
+
+        <!-- CSS, JavaScript -->
+        <script defer src="script.js"></script><!--js연결하기. defer:-->
+        <link rel="stylesheet" href="mystyle.css">    
     </head>
     <body>
-        <h1>Welcome to My first web!</h1>
-        <p>저의 홈페이지에 오신 것을 환영합니다. </p>
-        <nav>
+        <div class="index">
+            <h1>Subhin Hwang</h1>
+            <div class="tabs">
+                <a href="index.html" class="tab">Home</a>
+                <a href="/pages/about.html" class="tab">About</a>
+                <a href="/pages/d3.html" class="tab">D3</a>
+                <a href="/pages/project.html" class="tab">Project</a>
+            </div>
+        </div>
+
+        <!-- <h1>반!</h1> -->
+        <h2>저의 홈페이지에 오신 것을 환영합니다.🤗 </h2>
+        
+        <div id = "my-id">
             <ul>
                 <li>Home</li>
                 <li>Who am I?</li>
                 <li>Contact</li>
             </ul>
-            <p>저에 대해 알아보시려면 위의 링크를 클릭해주세요!</p>
-        </nav>  
-        <div class="dashboard-container">
-            <form>
-                <div class="form-group">
-                    <label for="date-range">Select Date:</label>
-                    <input type="date" id="date-range" required/>
-                </div>
+        </div>  
                 
-                <div class="form-group">
-                    <label>Data Range:</label>
-                    <input type="range" id="data-range" min="1" max="100" value="50"/>
-                </div>
-                <div class="form-group">
-                    <label>Chart Type:</label>
-                    <label class="inline"><input type="radio" value="bar" checked/>Bar</label>
-                    <label class="inline"><input type="radio" value="line"/>Line</label>
-                    <label class="inline"><input type="radio" value="pie"/>Pie</label>
-                </div>
-                <div class="form-group">
-                    <label>Select an Example:</label>
-                    <select>
-                        <option value="example1">Example 1</option>
-                        <option value="example2">Example 2</option>
-                        <option value="example3">Example 3</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <button type="submit">Generate Visualization</button>
-                </div>
-            </form>
-        </div>
+        <!-- welcome smile -->
         <svg width="500" height="500">
             <!-- Rectangle -->
-            <rect x="50" y="50" width="100" height="50" fill="blue"/>
-            <!-- Circle -->
-            <circle cx="200" cy="75" r="50" fill="green"/>
+            <g class="my-fig">
+                <rect x="200" y="80" width="100" height="50" fill="#D0D4CA"/>
             <!-- Ellipse -->
-            <ellipse cx="350" cy="75" rx="50" ry="25" fill="red"/>
+            <g class="my-fig">
+                <ellipse cx="400" cy="75" rx="50" ry="50" fill="#D0D4CA"/>
+            </g>
+            <g class="my-fig">
+                <ellipse cx="100" cy="75" rx="50" ry="50" fill="#D0D4CA"/>
+            </g>            
             <!-- Line -->
-            <line x1="50" y1="150" x2="400" y2="150" stroke="black" stroke-width="2"/>
+            <g class="my-fig">
+                <line x1="50" y1="350" x2="400" y2="350" stroke="#D0D4CA" stroke-width="2"/>
+            </g>
             <!-- Path -->
-            <path d="M 50 200 C 100 250, 300 250, 400 200" stroke="purple" fill="none" stroke-width="2"/>
+            <g class="my-fig">
+                <path d="M 50 400 C 100 450, 300 450, 400 400" stroke="#D0D4CA" fill="none" stroke-width="2"/>
+            </g>
+            <g class="my-fig">
+                <path d="M 50 420 C 100 430, 300 410, 400 450" stroke="#D0D4CA" fill="none" stroke-width="5"/>
+            </g>
             <!-- Polygon -->
-            <polygon points="50,300 200,300 125,400" fill="orange"/>
+            <g class="my-fig">
+                <polygon points="150,200 250,300 350,200" fill="#D0D4CA"/>
+            </g>
         </svg>
     </body>
 </html>

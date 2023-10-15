@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../mystyle.css">
+    <title>My projects</title>
+</head>
+
+<body>
+    <div class="index">
+        <h1>Subhin Hwang</h1>
+        <div class="tabs">
+            <a href="../index.html" class="tab">Home</a>
+            <a href="/pages/about.html" class="tab">About</a>
+            <a href="/pages/d3.html" class="tab">D3</a>
+            <a href="/pages/project.html" class="tab">Project</a>
+        </div>
+    </div>
+    <h2>My projects</h2>
+    <p>업무자동화</p>
+    <a href="https://surihub-rpa-app-ieocnc.streamlit.app/" class="tab">Streamlit으로 만든 업무자동화 페이지</a>    
+    <p>그냥 노는 중</p>
+    <div class="container">
+        <textarea class="story"></textarea>
+        <button id = "set-text" type="button">set text content</button>
+        <button id = "clear-text" type="button">Clear text content</button>
+    </div>
+    <div>
+        <button id="myButton">Click Me</button>
+
+        <script>
+            // 버튼 엘리먼트 가져오기
+            const button = document.getElementById("myButton");
+    
+            // 클릭 이벤트 핸들러 함수
+            function functionA() {
+                alert("Button Clicked!");
+                confirm("hello");
+            }
+    
+            // 버튼 클릭 이벤트에 핸들러 함수 연결
+            button.addEventListener("click", functionA);
+        </script>
+    </div>        
+</body>
+
+</html>
