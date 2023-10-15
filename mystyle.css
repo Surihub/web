@@ -66,10 +66,12 @@ p {
 g:hover, 
 .my-fig rect:hover, 
 .my-fig ellipse:hover, 
-.my-fig polygon:hover {
+.my-fig polygon:hover,
+.my-fig line:hover,
+.my-fig path:hover {
     stroke: #E9B824;
     stroke-width: 10px;
-    fill: #D83F31;
+    fill: #219C90;
 }
 
 /* Media Query for Mobile Devices */
