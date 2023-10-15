@@ -1,6 +1,6 @@
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
-const data = await d3.csv("/pages/d3/data/iris.csv");
+const data = await d3.csv("/d3/data/iris.csv");
 console.log(data);
 
 const width = 500;
